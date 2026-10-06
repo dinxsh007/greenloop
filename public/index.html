@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GREENLOOP | Smart Waste Management</title>
+    <meta
+      name="description"
+      content="GREENLOOP helps homes and businesses manage waste responsibly with smart pickup and recycling services."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-bar">
+        <div class="brand">
+          <span class="brand-mark">G</span>
+          <span>GREENLOOP</span>
+        </div>
+        <nav class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#process">Process</a>
+          <a href="#impact">Impact</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a href="#pickup" class="btn btn-primary">Book Pickup</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Cleaner Cities. Greener Future.</p>
+            <h1>Turn waste into value with smarter recycling.</h1>
+            <p class="hero-text">
+              GREENLOOP helps households, offices, and communities sort, collect, and recycle waste efficiently.
+            </p>
+            <div class="hero-actions">
+              <a href="#pickup" class="btn btn-primary">Schedule Pickup</a>
+              <a href="#services" class="btn btn-secondary">Explore Services</a>
+            </div>
+            <ul class="hero-points">
+              <li>Same-day waste collection</li>
+              <li>Eco-friendly disposal</li>
+              <li>Transparent pricing</li>
+            </ul>
+          </div>
+          <div class="hero-card">
+            <div class="mini-stat">
+              <span class="stat-number">12k+</span>
+              <span class="stat-label">Kg recycled</span>
+            </div>
+            <div class="mini-stat accent">
+              <span class="stat-number">94%</span>
+              <span class="stat-label">Customer satisfaction</span>
+            </div>
+            <div class="pickup-box">
+              <p>Next available pickup</p>
+              <strong>Today • 4:30 PM</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features" id="services">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">What we do</p>
+            <h2>Complete waste solutions for every space</h2>
+          </div>
+
+          <div class="card-grid">
+            <article class="feature-card">
+              <div class="icon">♻️</div>
+              <h3>Waste Collection</h3>
+              <p>Reliable pickup for organic, plastic, paper, e-waste, and mixed waste.</p>
+            </article>
+            <article class="feature-card">
+              <div class="icon">🏭</div>
+              <h3>Commercial Support</h3>
+              <p>Custom collection plans for offices, factories, malls, and institutions.</p>
+            </article>
+            <article class="feature-card">
+              <div class="icon">🌱</div>
+              <h3>Recycling Programs</h3>
+              <p>Recovery and processing designed to reduce landfill waste and preserve resources.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="process" id="process">
+        <div class="container">
+          <div class="section-heading narrow">
+            <p class="eyebrow">How it works</p>
+            <h2>Simple steps to cleaner communities</h2>
+          </div>
+
+          <div class="process-grid">
+            <div class="step">
+              <span>01</span>
+              <h3>Request</h3>
+              <p>Submit your pickup request online in less than a minute.</p>
+            </div>
+            <div class="step">
+              <span>02</span>
+              <h3>Schedule</h3>
+              <p>Choose a pickup slot that suits your home or business.</p>
+            </div>
+            <div class="step">
+              <span>03</span>
+              <h3>Collect</h3>
+              <p>Our team arrives, sorts, and handles disposal responsibly.</p>
+            </div>
+            <div class="step">
+              <span>04</span>
+              <h3>Track Impact</h3>
+              <p>See how your waste is being diverted from landfill through recycling.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="impact" id="impact">
+        <div class="container stats-grid">
+          <div class="stat-box">
+            <strong>500+</strong>
+            <span>Households served</span>
+          </div>
+          <div class="stat-box">
+            <strong>120</strong>
+            <span>Community drives</span>
+          </div>
+          <div class="stat-box">
+            <strong>18T</strong>
+            <span>Waste diverted</span>
+          </div>
+          <div class="stat-box">
+            <strong>7 cities</strong>
+            <span>Operational coverage</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="booking" id="pickup">
+        <div class="container booking-grid">
+          <div class="booking-copy">
+            <p class="eyebrow">Book a pickup</p>
+            <h2>Schedule waste collection today</h2>
+            <p>
+              Tell us about your waste type and preferred schedule. We’ll handle the rest.
+            </p>
+          </div>
+
+          <form id="pickupForm" class="pickup-form">
+            <div class="form-row two-col">
+              <label>
+                Full Name
+                <input type="text" name="name" placeholder="John Walker" required />
+              </label>
+              <label>
+                Email
+                <input type="email" name="email" placeholder="john@email.com" required />
+              </label>
+            </div>
+
+            <div class="form-row two-col">
+              <label>
+                Phone
+                <input type="tel" name="phone" placeholder="+91 98765 43210" required />
+              </label>
+              <label>
+                Waste Type
+                <select name="wasteType" required>
+                  <option value="">Select</option>
+                  <option value="Plastic">Plastic</option>
+                  <option value="Paper">Paper</option>
+                  <option value="Organic">Organic</option>
+                  <option value="E-Waste">E-Waste</option>
+                  <option value="Mixed Waste">Mixed Waste</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="form-row two-col">
+              <label>
+                Quantity
+                <input type="text" name="quantity" placeholder="2 bags / 10 kg" required />
+              </label>
+              <label>
+                Address
+                <input type="text" name="address" placeholder="Street, area, city" required />
+              </label>
+            </div>
+
+            <label>
+              Notes
+              <textarea name="notes" rows="4" placeholder="Optional details"></textarea>
+            </label>
+
+            <button type="submit" class="btn btn-primary full-width">Submit Request</button>
+            <div id="formStatus" class="form-status" aria-live="polite"></div>
+          </form>
+        </div>
+      </section>
+
+      <section class="recent-requests">
+        <div class="container">
+          <div class="section-heading narrow">
+            <p class="eyebrow">Live activity</p>
+            <h2>Recent service requests</h2>
+          </div>
+          <div id="recentRequests" class="request-list"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="container footer-grid">
+        <div>
+          <div class="brand footer-brand">
+            <span class="brand-mark">G</span>
+            <span>GREENLOOP</span>
+          </div>
+          <p>Smart waste collection, recycling, and sustainability for modern communities.</p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li>hello@greenloop.com</li>
+            <li>+91 98765 43210</li>
+            <li>Green City, Bengaluru</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
